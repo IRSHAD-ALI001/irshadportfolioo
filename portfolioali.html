@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>porfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- ---------------header--------------- -->
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="38636332-designstyle-box-l.png" class="logo">
+            <ul>
+                <li><a href="">HOME</a></li>
+                <li><a href="">ABOUT</a></li>
+                <li><a href="">SERVICES</a></li>
+                <li><a href="">PORTFOLIO</a></li>
+                <li><a href="">CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p></p><span id="element"></span>
+            </div>
+           <div class="tt"><h1>Hi, I'm <span>Irshad Ali</span></h1></div>
+    </div>
+</div>
+
+<!-- --------------about me-------------- -->
+<div class="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="llll.jpg" >
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas hic animi dicta! A, beatae aperiam magnam animi ipsum aut, provident repellat alias ut officia nesciunt. Similique nostrum nemo accusantium itaque.</p>
+
+                <div class="tab-title">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming languages</span><br>C, C++, Java,Python</li>
+                        <li><span>Web development</span><br>Html, Css, Javascript</li>
+                        <li><span>Backened</span><br>Flask ,Mysql, Python</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br> 2 months Internship from Drivesales(online) </li>
+                        
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2023-Current</span><br>MCA from Ajeenkya D Y Patil</li>
+                        <li><span>2019-2022</span><br>Bsc in Physics from nowrosjee wadia college</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- -------service ----------->
+
+ <div id="services">
+    <div id="container">
+         <h1 class="sub-title">MY SERVICES</h1>
+         <div class="services-list">
+            <div>
+                <i class="fa-solid fa-globe"></i>
+                <h2>Web design</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates est illum, voluptatem iusto autem vero animi dolorem ips</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gears"></i>
+                <h2>software developer</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates est illum, voluptatem iusto autem vero animi dolorem ipsam commodi aperiam natus ducimus expedita, impedit aliquid vitae cum. Minima, perspiciatis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-layer-group"></i>
+                <h2>Backened</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus voluptates est illum, voluptatem iusto autem vero animi dolorem ipsam commodi aperiam natus ducimus expedita, impedit aliquid vitae cum. Minima, perspiciatis.</p>
+                <a href="#">Learn more</a>
+            </div>
+         </div>
+    </div>
+ </div>
+
+ <!-- -----------portfolio-------------->
+<div id="porfolio">
+    <div class="container">
+        <h1 class="sub-title">MY WORK</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="pexels-pixabay-147413.jpg">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quod illum repellat quae facilis maiores enim veritatis pariatur consequatur ipsam!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pexels-luis-gomes-166706-546819.jpg">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quod illum repellat quae facilis maiores enim veritatis pariatur consequatur ipsam!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="pexels-wdnet-230544.jpg">
+                <div class="layer">
+                    <h3>social media app</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, quod illum repellat quae facilis maiores enim veritatis pariatur consequatur ipsam!</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">SEE MORE</a>
+    </div>
+</div>
+
+ 
+<!-- --------------------javascript-------------------------------- -->
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+            
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+
+    }
+    
+</script>
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script>
+    var typed = new Typed('#element', {
+      strings: ['WEB DEVELPOER', 'FRONTEND DEVELPOER', 'BACKEND DEVELPOER','FULL STACk DEVELPOER'],
+      typeSpeed: 50,
+    }); 
+</script>
+<script src="https://kit.fontawesome.com/c98bc39fef.js" crossorigin="anonymous"></script>
+</body>
+</html>
